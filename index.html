@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <div class="boxWrapper">
+
+        <div class="bill">
+            <h5>Bill</h5>
+            <input type="Number" placeholder="Enter Amount" id="number">
+        </div>
+
+        <div class="sum">
+
+                <div class="person">
+                    <div class="info">
+                    <h5>Tip Amount</h5>
+                    <h6>/ Person</h6>  
+                    </div>
+                    <div class="totalSum totalSum1" id="tipSum">$0.00</div>       
+                </div>
+                
+                <div class="total">
+                    <div class="info2">
+                    <h5>Total</h5>
+                    <h6>/ Person</h6> 
+                    </div>
+                    <div class="totalSum totalSum2" id="totalSum">$0.00</div>        
+                </div>
+            <div class="resetBtn">
+                <button type="reset" id="reset">Reset</button>
+            </div>
+        </div>
+        
+        <div class="btn" >
+            <h5>Select tip %</h5>
+            <button value="5">5%</button>
+            <button value="10">10%</button>
+            <button value="15">15%</button>
+            <button value="25">25%</button>
+            <button value="50">50%</button>
+            <input type="number" placeholder="Custom" id="customTip" oninput="tipCustom()">
+        </div>
+        
+        <div class="numOfPeople">
+            <h5>Number of People</h5>
+            <input type="Number" placeholder="Enter Number Of People" id="numOfPeople" oninput="tipCustom()">
+        </div>
+        
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
